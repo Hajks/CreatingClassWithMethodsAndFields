@@ -34,7 +34,7 @@ namespace CreatingClassWithMethodsAndFields
 
         private void bobGivesButton_Click(object sender, EventArgs e)
         {
-            joe.Cash += bob.GiveCash(5);
+            joe.ReceiveCash(bob.GiveCash(5)); //Made some correction, now it should work better.
             UpdateLabels();
         }
 
@@ -42,7 +42,7 @@ namespace CreatingClassWithMethodsAndFields
         {
 
 
-            bob.Cash += joe.GiveCash(5);
+            bob.ReceiveCash(joe.GiveCash(5));
             UpdateLabels();
         }
 
